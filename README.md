@@ -24,25 +24,25 @@ This project is a music player interface built using React JS, designed to match
 
 ### Installation
 
-1. Clone the repository:
+- Clone the repository:
 
-```sh
-git clone https://github.com/your-username/SameSpace.git
+  ```bash
+  git clone https://github.com/your-username/SameSpace.git
 
-2. Navigate to the project directory::
+- Navigate to the project directory:
 
-```sh
-cd react-app
+   ```bash
+   cd react-app
 
-3. Install dependencies:
+- Install dependencies:
 
-```sh
-npm install
+  ```bash
+  npm install
 
-4. Start the development server::
+- Start the development server::
 
-```sh
-npm run dev
+ ```bash
+ npm run dev
 
 
 
