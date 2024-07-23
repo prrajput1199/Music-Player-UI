@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+html,body{
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  /* font-style: normal; */
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Left {
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+}
+
+.tab-search {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-shrink: 0; /* Prevents the section from growing or shrinking */
+  padding: 40px 40px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+/* Hide scrollbar for IE, Edge */
+.songList {
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Firefox */
+.songList  {
+  scrollbar-width: none; 
+}
+
+.player h2 {
+  color: white;
+}
+
+.tab {
+  cursor: pointer;
+  display: flex;
+  float: left;
+  background: none;
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 40%;
+}
+.Search-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.searchbar {
+  width: 90%;
+  border: none;
+  outline: none;
+  height: 100%;
+  background: none;
+  color: white;
+  padding: 8px 16px 8px 16px;
+}
+
+.song-list div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  gap: 10px;
+}
+/* .song-list-div:hover{
+  background-color: aqua;
+} */
+.song-list img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.song-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 1200px) {
+  .Left {
+    display: none;
+  }
+  .middle {
+    width: 40vw;
+  }
+  .player {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 963px) {
+  .player {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: black;
+  }
+}
+@media (max-width: 768px) {
+  .middle {
+    width: 100%;
+  }
+
+  .player {
+    display: none;
+  }
+}
