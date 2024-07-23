@@ -39,7 +39,7 @@ This project is a music player interface built using React JS, designed to match
   ```bash
   npm install
 
-- Start the development server::
+- Start the development server:
 
  ```bash
  npm run dev
