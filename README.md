@@ -41,8 +41,8 @@ This project is a music player interface built using React JS, designed to match
 
 - Start the development server:
 
- ```bash
- npm run dev
+  ```bash
+  npm run dev
 
 
 
