@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { toggleContext } from "../App";
 import { ArrowLeft } from "phosphor-react";
 
-
 const Player = ({ currentSong }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const useCon = useContext(toggleContext);
@@ -67,23 +66,31 @@ const Player = ({ currentSong }) => {
             <ArrowLeft size={32} />
             <p>Back</p>
           </div>
-          <div>
-            <h2
-              style={{
-                color: "white",
-              }}
-            >
-              {currentSong.name}
-            </h2>
-            <h3
-              style={{
-                color: "white",
-                opacity: "60%",
-                fontSize: "16px",
-              }}
-            >
-              {currentSong.artist}
-            </h3>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+            }}
+          >
+            <div>
+              <h2
+                style={{
+                  color: "white",
+                }}
+              >
+                {currentSong.name}
+              </h2>
+              <h3
+                style={{
+                  color: "white",
+                  opacity: "60%",
+                  fontSize: "16px",
+                }}
+              >
+                {currentSong.artist}
+              </h3>
+            </div>
           </div>
 
           <div>
@@ -91,9 +98,9 @@ const Player = ({ currentSong }) => {
               src={`https://cms.samespace.com/assets/${currentSong.cover}`}
               alt="cover"
               style={{
-                width: "280px",
+                width: "300px",
                 objectFit: "cover",
-                height: "280px",
+                height: "300px",
               }}
             />
           </div>
