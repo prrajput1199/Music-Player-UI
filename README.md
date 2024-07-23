@@ -27,5 +27,22 @@ This project is a music player interface built using React JS, designed to match
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/your-username/music-player-ui.git
+git clone https://github.com/your-username/SameSpace.git
+
+2. Navigate to the project directory::
+
+```sh
+cd react-app
+
+3. Install dependencies:
+
+```sh
+npm install
+
+4. Start the development server::
+
+```sh
+npm run dev
+
+
 
