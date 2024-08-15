@@ -16,11 +16,11 @@ const Left = ({currentSong}) => {
         objectFit:"cover",
         paddingTop:"20px"
       }}/>
-      <img src={Profile} alt="" style={{
+{/*       <img src={Profile} alt="" style={{
         height:"48px",
         width:"48px",
         paddingBottom:"20px"
-      }} />
+      }} /> */}
     </div>
   )
 }
